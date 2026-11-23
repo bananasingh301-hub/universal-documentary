@@ -1,0 +1,37 @@
+# Secrets & Credentials (ABSOLUTE BLOCK)
+.env*
+*.key
+*.pem
+*.token
+credentials*
+secrets*
+
+# Media & Render Artifacts (Keep repo lightweight)
+out/
+stills/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.mp3
+*.flac
+*.aac
+
+# Node & Python Dependencies
+node_modules/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Operating System Caches
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Configs
+.vscode/
+.idea/
+*.swp
+*.bak

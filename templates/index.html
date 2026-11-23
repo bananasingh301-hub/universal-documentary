@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Scene</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #000; overflow: hidden; width: 100vw; height: 100vh; }
+  canvas { width: 100%; height: 100%; display: block; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script type="module">
+import { mulberry32, easeInOutCubic } from '/core/lib.js';
+
+window.DUR = 30.0;
+window.READY = false;
+window.EV = [];
+
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+
+function resize() {
+  canvas.width = 1920;
+  canvas.height = 1080;
+}
+resize();
+
+window.render = function(t) {
+  ctx.fillStyle = '#07090d';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  
+  // Render frame at time t
+};
+
+window.READY = true;
+</script>
+</body>
+</html>

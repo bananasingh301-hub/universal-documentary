@@ -1,0 +1,14 @@
+{
+  "name": "universal-documentary",
+  "version": "1.0.0",
+  "description": "Universal Procedural Documentary Film Engine",
+  "type": "module",
+  "scripts": {
+    "render": "node core/render/video.mjs",
+    "still": "node core/render/still.mjs"
+  },
+  "dependencies": {
+    "three": "^0.160.0",
+    "puppeteer-core": "^22.0.0"
+  }
+}
